@@ -5,7 +5,7 @@ A blast-based programme to compare two similar genomes, and retrieve functional 
 Download the .py file and make it executable using a "chmod +x .py" command.
 
 ## Simple run
-
+    $ app.py -folders "data/PROKKA1,data/PROKKA2"
 
 ## Input files
 This programme has been developed to analyse genomes annotated by PROKKA. Therefore, it accepts two types of input:
