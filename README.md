@@ -4,6 +4,12 @@ It has been developed to study two ecotypes of a single bacterial species. There
 
 ## Installation
 Download the .py file and make it executable using a "chmod +x .py" command.
+Requires the following softwares to be installed:
+   - python (http://python.org)
+   - blast (https://www.ncbi.nlm.nih.gov/guide/howto/run-blast-local/)
+   - argparse (https://pypi.python.org/pypi/argparse)
+   - matplotlib (http://matplotlib.org)
+   - networkx (http://networkx.github.io)
 
 ## Input files
 This programme has been developed to analyse genomes annotated by PROKKA. Therefore, it accepts two types of input:
