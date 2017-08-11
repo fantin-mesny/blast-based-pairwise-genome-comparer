@@ -1,5 +1,6 @@
 # blast-based-pairwise-genome-comparer
 A blast-based programme to compare two similar genomes, and retrieve functional data (paralog families with network representations, id-to-GO/Pfam/COG associations, reciprocal best matches list...)
+It has been developed to study two ecotypes of a single bacterial species. Therefore, it is adapted to the comparison of two highly similar genomes.
 
 ## Installation
 Download the .py file and make it executable using a "chmod +x .py" command.
@@ -20,6 +21,11 @@ OR
 - **-genomes** Two comma-separated genomes (fasta-files)
 - **-prot** Two comma-separated predicted proteins multi-fasta files
 - **-rna** Two comma-separated predicted transcripts multi-fasta files
+- **-gff** Two comma-separated .gff annotation files
+
+NB: please make sure to follow the same order organism1,organism2 in each of these arguments
+
+    $ app.py -genomes "data/genome1.fna,data/genome2.fna" -prot "data/p1.faa,data/p2.faa" -rna "data/t1.ffn,data/t2.ffn" -gff "data/1.gff,data/2.gff"
 
 ## Optional arguments
 - **-o** Output folder, default: creates a folder in the programme's directory 
