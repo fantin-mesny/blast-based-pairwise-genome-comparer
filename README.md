@@ -16,12 +16,12 @@ This programme has been developed to analyse genomes annotated by PROKKA. Theref
 - either two PROKKA folders (one per genome) including .faa, .ffn, .fna and .gff files.
 - or separated predicted transcripts and proteins multi-fasta files, genomes sequences and .gff-type annotation files.
 
-## Simple run
-    $ app.py -folders "data/PROKKA1,data/PROKKA2"
-
-## Required arguments
+## How to run
+### Required arguments
 - **-folders** Two comma-separated folders including transcripts (.ffn), proteins (.faa) and genome (.fna) fasta files
 
+    $ app.py -folders "data/PROKKA1,data/PROKKA2"
+    
 OR
 
 - **-genomes** Two comma-separated genomes (fasta-files)
@@ -34,7 +34,7 @@ NB: please make sure to follow the same order organism1,organism2 in each of the
     $ app.py -genomes "data/genome1.fna,data/genome2.fna" -prot "data/p1.faa,data/p2.faa" 
         -rna "data/t1.ffn,data/t2.ffn" -gff "data/1.gff,data/2.gff"
 
-## Optional arguments
+### Optional arguments
 - **-o** Output folder, default: creates a folder in the programme's directory 
 - **-minLrap** minLrap significance threshold for blast hits, default=0.7
 - **-pident** Identity percentage significance threshold for blast hits, default=70
