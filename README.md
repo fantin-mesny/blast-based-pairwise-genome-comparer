@@ -18,11 +18,7 @@ This programme has been developed to analyse genomes annotated by PROKKA. Theref
 
 ## How to run
 ### Required arguments
-- **-folders** Two comma-separated folders including transcripts (.ffn), proteins (.faa) and genome (.fna) fasta files
-
-
-    $ app.py -folders "data/PROKKA1,data/PROKKA2"
-    
+- **-folders** Two comma-separated folders including transcripts (.ffn), proteins (.faa) and genome (.fna) fasta files    
     
 OR
 
@@ -33,6 +29,8 @@ OR
 
 NB: please make sure to follow the same order organism1,organism2 in each of these arguments
 
+    $ app.py -folders "data/PROKKA1,data/PROKKA2
+    OR
     $ app.py -genomes "data/genome1.fna,data/genome2.fna" -prot "data/p1.faa,data/p2.faa" 
         -rna "data/t1.ffn,data/t2.ffn" -gff "data/1.gff,data/2.gff"
 
