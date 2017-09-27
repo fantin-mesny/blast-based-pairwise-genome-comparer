@@ -43,9 +43,10 @@ NB: please make sure to follow the same order organism1,organism2 in each of the
 - **-graph** Ouput type for the plot showing genomes similarity. 'img' (default) or 'show' to display using Python, default='img'
 - **-paralog_pid** Identity percentage significance threshold to consider proteins as homologous, default=60
 
+To use these two options, you need to uncomment the last lines of the script and to have COG and Pfam rpsBlast databases.
+
 - **-cog** Perform COG rpsblasts ? 'yes' or 'no' (default)
 - **-pfam** Perform Pfam rpsblasts and get protein-GO associations ? 'yes'(default) or 'no' (default)
-To use these two options, you need to uncomment the last lines of the script and to have COG and Pfam rpsBlast databases.
 
 ## Data it retrieves
 - all-against-all blastp original outputs + "hitsTables" giving supplementary informations (reciprocity, minLrap, maxLrap)
