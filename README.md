@@ -41,8 +41,8 @@ NB: please make sure to follow the same order organism1,organism2 in each of the
 - **-minLrap** minLrap significance threshold for blast hits, default=0.7
 - **-pident** Identity percentage significance threshold for blast hits, default=70
 - **-graph** Ouput type for the plot showing genomes similarity. 'img' (default) or 'show' to display using Python, default='img'
-- **-cog** Perform COG rpsblasts ? 'yes'(default) or 'no'
-- **-pfam** Perform Pfam rpsblasts and get protein-GO associations ? 'yes'(default) or 'no'
+- **-cog** Perform COG rpsblasts ? 'yes' or 'no' (default)
+- **-pfam** Perform Pfam rpsblasts and get protein-GO associations ? 'yes'(default) or 'no' (default)
 - **-paralog_pid** Identity percentage significance threshold to consider proteins as homologous, default=60
 
 
@@ -53,6 +53,9 @@ NB: please make sure to follow the same order organism1,organism2 in each of the
 - a genomes similarity graph (.png) showing the %id for each cds along the genome
 - a reciprocal best-matches list, based on chosen %id and minLrap thresholds
 - a "paralog" folder containing a list of numbered paralog families and a network weighted graph for each one (.png) 
+
+If you wish to get functional data using COG, Pfam and GO annotation systems, uncomment the last lines of the script. You would then obtain:
+
 - rpsblast on Pfam database output
 - rpsblast on COG database output
 - a list of Pfam numbers per protein id for each organism
